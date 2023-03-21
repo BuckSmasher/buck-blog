@@ -1,0 +1,10 @@
+{
+  "articles": [
+    {
+      "title": "test",
+      "body": "test",
+      "author": "test",
+      "id": 1
+    }
+  ]
+}
