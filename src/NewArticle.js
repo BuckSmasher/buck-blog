@@ -1,4 +1,8 @@
 import { useState } from 'react';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import Button from 'react-bootstrap/Button';
 
 const NewArticle = () => {
 
@@ -22,21 +26,28 @@ const NewArticle = () => {
     }
 
     return ( 
-        <div className="form">
-            <h1>CREATE NEW ARTICLE</h1>
 
-            <form onSubmit={handleSubmit}>
+      <Container>
+        
+          <div className="form">
+          <Row>
+              <h1>CREATE NEW ARTICLE</h1>
+          </Row>
+          
+              <form onSubmit={handleSubmit}>
 
-                <label>Title</label>
-                <input type="text" value={ title } onChange={(e) => setTitle(e.target.value)}></input>
-                <label>Body</label>
-                <textarea value={ body } onChange={(e) => setBody(e.target.value)}></textarea>
-                <label>Author</label>
-                <input type="text" value={ author } onChange={(e) => setAuthor(e.target.value)}></input>
-                <button>Submit</button>
+                  <Row><label>Title</label>
+                  <input type="text" value={ title } onChange={(e) => setTitle(e.target.value)}></input></Row>
+                  <Row><label>Body</label>
+                  <textarea value={ body } onChange={(e) => setBody(e.target.value)}></textarea></Row>
+                  <Row><label>Author</label>
+                  <input type="text" value={ author } onChange={(e) => setAuthor(e.target.value)}></input></Row>
+                  <Row><button>Submit</button></Row>
 
-            </form>
-        </div>
+              </form>
+
+          </div>
+      </Container>
      );
 }
  

@@ -3,34 +3,40 @@ import NewArticle from './NewArticle.js';
 import Navigation from './Navigation.js';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import ArticleDetails from './ArticleDetails.js';
+import ThemeProvider from 'react-bootstrap/ThemeProvider';
 
 function App() {
 
 
   return (
     <Router>
-    <div className="App">
-      <Navigation />
-      <Switch>
 
-      <Route exact path="/">
-        <ArticlesList />
-      </Route>
+      <ThemeProvider breakpoints={['xxxl', 'xxl', 'xl', 'lg', 'md', 'sm', 'xs', 'xxs']} minBreakpoint="xxs">
 
-      <Route path="/new">
+        <div className="App">
+          <Navigation />
+          <Switch>
 
-        <NewArticle />
+          <Route exact path="/">
+            <ArticlesList />
+          </Route>
 
-      </Route>
+          <Route path="/new">
 
-      <Route path="/articles/:idnum">
+            <NewArticle />
 
-        <ArticleDetails />
+          </Route>
 
-      </Route>
+          <Route path="/articles/:idnum">
 
-      </Switch>
-      </div>
+            <ArticleDetails />
+
+          </Route>
+
+          </Switch>
+          </div>
+
+        </ThemeProvider>
 
     </Router>
       

@@ -1,5 +1,9 @@
 import { useHistory, useParams } from "react-router-dom";
 import useFetch from "./useFetch";
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import Button from 'react-bootstrap/Button';
 
 const ArticleDetails = () => {
 
@@ -18,7 +22,7 @@ const ArticleDetails = () => {
             <h2>{ article.title }</h2>
             <p>{ article.body }</p>
             <strong>{ article.author }</strong>
-            <button onClick={handleClick}>Delete</button>
+            <p onClick={handleClick}><Button variant="primary">Delete</Button></p>
         </article>
         )}
 </div>

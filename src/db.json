@@ -1,10 +1,16 @@
 {
   "articles": [
     {
-      "title": "test",
-      "body": "test",
-      "author": "test",
+      "title": "Hello World",
+      "body": "Just something to have in the database so the homepage isn't empty",
+      "author": "Buck",
       "id": 1
+    },
+    {
+      "title": "2",
+      "body": "2",
+      "author": "buck",
+      "id": 2
     }
   ]
 }
