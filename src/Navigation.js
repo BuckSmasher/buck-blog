@@ -3,6 +3,7 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
+import Stack from 'react-bootstrap/Stack';
 
 const Navigation = () => {
     return ( 
@@ -17,12 +18,13 @@ const Navigation = () => {
                 </Col>
                 <Col></Col>
                 <Col>
-                    <Link to="/">
-                        <h2 className="navitem">Home</h2>
-                    </Link>
-                    <>
-                    <Link to="/new"><Button variant="primary">New Post</Button> {' '}</Link>
-                    </>
+
+                    <Stack direction="horizontal" gap={8}>
+
+                       <div><Link to="/"><h2 className="navitem">Home</h2></Link></div>
+                       <div className="ms-auto"><Link to="/new"><Button variant="primary">New Post</Button> {' '}</Link></div>
+
+                    </Stack>
                 </Col>
             </Row>
         </Container>

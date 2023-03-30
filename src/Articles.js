@@ -11,8 +11,6 @@ const ArticlesList = () => {
     const { data: articles, pending, error } = useFetch('http://localhost:8000/articles');
 
     return (  
-    <Container>
-        <Row>
         <div className="article-list">
 
             { error && <p> { error } </p> }
@@ -20,8 +18,6 @@ const ArticlesList = () => {
             { articles && <DisplayArticles articles={articles}/> }
 
         </div>
-        </Row>
-    </Container>
     );
 }
  

@@ -1,16 +1,28 @@
 {
   "articles": [
     {
-      "title": "Hello World",
-      "body": "Just something to have in the database so the homepage isn't empty",
+      "title": "New Post",
+      "body": "New Post",
       "author": "Buck",
-      "id": 1
+      "id": 3
     },
     {
-      "title": "2",
-      "body": "2",
+      "title": "Redirect Test",
+      "body": "Redirect Test",
+      "author": "Buck",
+      "id": 4
+    },
+    {
+      "title": "submittable?",
+      "body": "llewpfenufhwiuyefpwenceufhapfeoiehwoepehvspedoif",
       "author": "buck",
-      "id": 2
+      "id": 5
+    },
+    {
+      "title": "Bootstrap Form Test",
+      "body": "Figuring out Bootstrap stylings for the New Post form",
+      "author": "Buck",
+      "id": 6
     }
   ]
 }

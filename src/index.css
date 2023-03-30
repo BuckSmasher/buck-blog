@@ -25,7 +25,7 @@ h3 {
 }
 
 .article-preview {
-  border-top: 1px solid black;
+  border-top: 1px solid rgb(183, 183, 183);
   box-shadow: 0px 7px 7px silver;
   padding: 20px;
   text-align: center;
@@ -33,10 +33,6 @@ h3 {
 
 h2.navitem {
   position: relative;
-  text-align: center;
-  display: inline;
-  margin-right: 40px;
-  padding: 10px;
   top: 3px;
   font-size: 18px;
 }
@@ -48,6 +44,7 @@ h2.navitem {
     align-content: center;
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 20px;
 
 }
 
@@ -56,4 +53,8 @@ img.site-logo {
   border-radius: 100%;
   position: absolute;
   top: 7px;
+}
+
+h1.page-header {
+  text-align: center;
 }
